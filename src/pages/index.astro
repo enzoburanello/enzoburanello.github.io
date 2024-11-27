@@ -1,6 +1,11 @@
 ---
 import Header from "../components/Header.astro";
 import Cursor from "../components/Cursor.astro";
+import { motion } from "framer-motion"
+import Title from "../components/title"
+import Cards from "../components/CardList"
+import Ask from "../components/AskContact"
+import Start from "../components/FirstTitle"
 
 ---
 
@@ -21,24 +26,42 @@ import Cursor from "../components/Cursor.astro";
 		<meta name="viewport" content="width=device-width" />
 		<title>Home</title>
 	</head>
-	<body class="cursor-none h-screen overflow-hidden 	 ">
+	<body class="bg-gray-50">
 		
-		<Cursor/>
-		<content class="h-screen">
-			
-		
-		<main class=" h-full  overflow-hidden flex flex-col justify-between  items-center pb-16">
-			<!-- animate-loop -->
+
+		<content class="">
 			<Header />
-			<div class=" w-screen ">	
-				<h2 class="text-[300px]  whitespace-nowrap font-sansita   animate-loop"> 
-					<span class="inline-block">HI Welcome, let’s see some of my work.</span>
-					<span class="inline-block">HI Welcome, let’s see some of my work.</span></h2>
+		
+		<main class=" h-full flex flex-col justify-center  items-center px-60  gap-80">
+
+			<div class="h-screen">
+
+				<Start/>
 
 			</div>
+				
+
+
+			<Title client:load/>
+					
+		
+			<Cards/>
+
+			<article class="w-full pb-60">
+
+				<div class="flex flex-col justify-start items-start">
+					<Ask client:load/>
+
+					<button class="flex justify-center items-center border-2 py-3 px-8 rounded-xl border-black font-poppins mt-10 font-medium"><a href="">Contact-me</a></button>
+				</div>
+				
+				
+			</article>
+				
+
 			
 
-				<a href="/workpage/" class="flex justify-center items-center border-2 py-3 px-8 rounded-xl border-black font-poppins mt-10">Take a look</a>
+				<!-- <a href="/workpage/" class="flex justify-center items-center border-2 py-3 px-8 rounded-xl border-black font-poppins mt-10">Take a look</a> -->
 		</main>
 		
 		
