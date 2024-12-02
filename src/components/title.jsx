@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Introduction = () => {
   return (
-    <div className="flex bg-gray-50 min-h-screen z-10">
+    <div className="flex bg-gray-50 h-min-screen px-60">
       <div className="w-screen flex flex-col px-60 gap-40">
         {/* Animation pour 1 */}
         <motion.h2
@@ -14,7 +14,7 @@ const Introduction = () => {
           className="font-poppins text-5xl flex flex-col font-bold gap-7"
         >
           <span>Hi, I am Enzo Buranello</span>
-          <span>student on graphic design</span>
+          <span>a graphic design student</span>
         </motion.h2>
 
         {/* Animation pour 2 */}

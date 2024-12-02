@@ -4,7 +4,11 @@ import { motion } from 'framer-motion';
 
 const BlogCard = ({ title, description, image, reverse }) => {
   return (
-    <div
+    <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: false, amount: 0.5 }} 
+    transition={{ duration: 0.8 }} 
       className={`flex flex-row px-40 py-20 w-[1250px] h-[600px] bg-white justify-between items-center gap-40 rounded-[38px] ${
         reverse ? 'flex-row-reverse' : ''
       }`}
@@ -14,7 +18,7 @@ const BlogCard = ({ title, description, image, reverse }) => {
         <h3 className="text-2xl font-medium">{title}</h3>
         <p>{description}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -24,21 +28,21 @@ const BlogList = () => {
       title: 'Graphic Design',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat ab quibusdam vero quo harum, exercitationem veritatis incidunt illum. Laudantium vitae veniam facere reiciendis quia, voluptate porro omnis deleniti tempora!',
-      image: '../../public/blog-placeholder-5.jpg',
+      image: '/blog-placeholder-5.jpg',
       reverse: false,
     },
     {
       title: 'Web Development front-end',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat ab quibusdam vero quo harum, exercitationem veritatis incidunt illum. Laudantium vitae veniam facere reiciendis quia, voluptate porro omnis deleniti tempora!',
-      image: '../../public/blog-placeholder-5.jpg',
+      image: '/blog-placeholder-5.jpg',
       reverse: true,
     },
     {
       title: 'Project Management',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum repellat ab quibusdam vero quo harum, exercitationem veritatis incidunt illum. Laudantium vitae veniam facere reiciendis quia, voluptate porro omnis deleniti tempora!',
-      image: '../../public/blog-placeholder-5.jpg',
+      image: '/blog-placeholder-5.jpg',
       reverse: false,
     },
   ];

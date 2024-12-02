@@ -2,6 +2,7 @@
 
 import Header from "../components/Header.astro";
 import Cursor from "../components/Cursor.astro";
+import WorkTitle from "../components/WorkTitle";
 ---
 
 <!DOCTYPE html>
@@ -25,41 +26,17 @@ import Cursor from "../components/Cursor.astro";
 
 
 
-<body class=" w-screen h-screen ">
+<body class=" bg-gray-50  ">
 <Header/>
 
-    <main class=" flex flex-col p-20">
-        <h2 class="pb-40 text-[96px] font-popins flex flex-col">
-            <span>some of </span>
-            <span> graphic design projects</span>
-           
-        </h2>
-        <ul class="flex flex-col w-screen justify-center items-center">
-        <li class="flex flex-row w-screen h-96 gap-7 ">
-        
-                <img class="h-96 w-96 rounded-xl" src="../../public/blog-placeholder-2.jpg" alt="">
+<main class="flex flex-col px-[60px] items-center justify-center h-screen">
+    <div class="flex flex-col gap-20 px-60">
+  <WorkTitle client:load/>
+    </div>
+   
+</main>
 
-            
-                <div class="flex flex-col justify-between items-start">
-               <div>
-                <h3 class="font-poppins text-5xl font-light text-">vector illustrations</h3>
-                <p class="font-poppins text-2xl"> some of academic and personal projects</p>
-                </div> 
-                
-                <button class="  flex justify-center items-center border-2 py-2 px-8 rounded-lg border-black font-poppins "> <a href="">see more</a> </button>
-            </div>
-            
-        </li>
 
-        <li>
-
-        </li>
-
-        <li>
-
-        </li>
-    </ul>
-    </main>
     
 </body>
 </html>

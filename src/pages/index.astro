@@ -6,6 +6,7 @@ import Title from "../components/title"
 import Cards from "../components/CardList"
 import Ask from "../components/AskContact"
 import Start from "../components/FirstTitle"
+import ContactButton from "../components/ButtonContact"
 
 ---
 
@@ -29,30 +30,30 @@ import Start from "../components/FirstTitle"
 	<body class="bg-gray-50">
 		
 
-		<content class="">
+		<content >
 			<Header />
+
+
 		
-		<main class=" h-full flex flex-col justify-center  items-center px-60  gap-80">
+		<main class="flex flex-col justify-center  items-center px-60  gap-80">
+		<div  class="h-screen flex items-center w-full">
+			<Start client:load/>
+		</div>
+			
 
-			<div class="h-screen">
-
-				<Start/>
-
-			</div>
-				
 
 
 			<Title client:load/>
 					
 		
-			<Cards/>
+			<Cards client:load/>
 
-			<article class="w-full pb-60">
+			<article class="w-screen py-60 bg-white">
 
-				<div class="flex flex-col justify-start items-start">
+				<div class="px-60 flex flex-col justify-start items-start gap-8">
 					<Ask client:load/>
 
-					<button class="flex justify-center items-center border-2 py-3 px-8 rounded-xl border-black font-poppins mt-10 font-medium"><a href="">Contact-me</a></button>
+					<ContactButton client:load/>
 				</div>
 				
 				
