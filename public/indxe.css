@@ -1,0 +1,13 @@
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities; 
+
+
+@layer base{
+  :root{
+
+    --clr-gradient:  linear-gradient(180deg, rgba(0,0,0,0.6685267857142857) 0%, rgba(0,0,0,0.9962578781512605) 100%);
+}  
+}
+
+

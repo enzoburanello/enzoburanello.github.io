@@ -20,6 +20,9 @@ export default {
 				},
 			},
 		  },
+		  backgroundImage:{
+			grad:"var(--clr-gradient)",
+		  },
 		  colors: {
 			primary : "rgb(var(--primary))",
 			secondary : "hsl(var(--secondary))",
