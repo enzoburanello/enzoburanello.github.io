@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const WorkTitle = () => {
   return (
     <div className=" bg-gray-50 h-min-screen">
-      <div  class="flex flex-col font-poppins text-5xl font-bold gap-10">
+      <div  className="flex flex-col font-poppins text-5xl font-bold gap-10">
         {/* Animation pour 1 */}
         <motion.h2
           initial={{ opacity: 0, y: 50 }}

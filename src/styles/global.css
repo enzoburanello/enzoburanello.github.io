@@ -5,8 +5,7 @@
  */
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
+
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -30,7 +29,7 @@
 	font-display: swap;
 }
 body {
-	font-family: 'Atkinson', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -100,6 +99,7 @@ table {
 	width: 100%;
 }
 img {
+
 	height: auto;
 	border-radius: 8px;
 }

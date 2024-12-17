@@ -1,0 +1,17 @@
+---
+import Header from "../components/Header.astro";
+import  ImagesData  from '../data/ImagesData.js';
+console.log(ImagesData)
+
+---
+
+<h1>test</h1>
+
+
+
+<ul class="grid grid-cols-[repeat(auto-fit,minmax(176px,1fr))] gap-2 px-60 ">
+{ImagesData.map((i) => {
+    return <li class="aspect-square overflow-hidden"><img class="w-full object-cover" src={i.src} alt={i.title}></li>})}
+
+
+</ul>

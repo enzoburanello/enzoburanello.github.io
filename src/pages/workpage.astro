@@ -4,6 +4,12 @@ import Header from "../components/Header.astro";
 import Cursor from "../components/Cursor.astro";
 import WorkTitle from "../components/WorkTitle";
 import BlogWorkCard from "../components/WorkCards";
+import '../styles/index.css';
+import { ViewTransitions } from 'astro:transitions';
+import BlogIllu from './BlogIllu.astro';
+
+
+
 ---
 
 <!DOCTYPE html>
@@ -28,12 +34,17 @@ import BlogWorkCard from "../components/WorkCards";
 
 
 <body class=" bg-gray-50 overflow-x-hidden pt-60 ">
+	<ViewTransitions />
+
 <Header/>
 
 <main class=" px-[60px] ">
     <div class="flex flex-col justify-center items-center gap-72 px-60">
   <WorkTitle client:load/>
-  <BlogWorkCard />
+  <BlogWorkCard client:load/>
+
+
+
 
     </div>
    
